@@ -1,0 +1,17 @@
+@import "../color";
+
+.sns-link {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+    font-size: 12px;
+  }
+
+  .i {
+    margin-right: 5px;
+  }
+}

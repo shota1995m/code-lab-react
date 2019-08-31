@@ -1,9 +1,12 @@
-import React, {Component} from 'react';
-import {render} from 'react-dom';
+import React, {Component} from 'react'
+import {render} from 'react-dom'
+import './scss/style.scss'
+
+import Main from './components/Main'
 
 class App extends Component {
   render () {
-    return <p>code lab</p>;
+    return <Main />;
   }
 }
 
