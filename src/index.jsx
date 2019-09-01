@@ -1,12 +1,12 @@
 import React, {Component} from 'react'
 import {render} from 'react-dom'
-import './scss/style.scss'
+import 'scss/style.scss'
 
-import Main from './components/Main'
+import Top from 'components/Top/Top'
 
 class App extends Component {
   render () {
-    return <Main />;
+    return <Top />;
   }
 }
 

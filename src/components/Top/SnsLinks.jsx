@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {render} from 'react-dom'
-import '../scss/components/snslinks.scss';
+import 'scss/components/snslinks.scss';
 
 import {FaGithub, FaTwitter} from 'react-icons/fa'
 
