@@ -1,6 +1,9 @@
 import React, {Component} from 'react'
 import {render} from 'react-dom'
-import 'scss/components/menu.scss';
+import { Link } from 'react-router-dom'
+
+import menuJson from 'data/menu.json'
+import 'scss/components/menu.scss'
 
 export default class Menu extends Component {
 
@@ -8,20 +11,7 @@ export default class Menu extends Component {
     super(props)
 
     this.state = {
-      links: [
-        {
-          name: "Top",
-          href: "#"
-        },
-        {
-          name: "Lab",
-          href: "#"
-        },
-        {
-          name: "About",
-          href: "#"
-        }
-      ]
+      links: menuJson
     }
   }
 
@@ -30,7 +20,7 @@ export default class Menu extends Component {
       <ul>
       {this.state.links.map((v,k) => {
         return <li key={k}>
-          <a href={v['href']}>{v['name']}</a>
+          <Link to={v['href']}>{v['name']}</Link>
           </li>
       })}
       </ul>
