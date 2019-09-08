@@ -8,9 +8,6 @@ export default class Top extends Component {
   render () {
     return <>
       <Main />
-      <Main />
-      <Main />
-      <Main />
     </>;
   }
 }
