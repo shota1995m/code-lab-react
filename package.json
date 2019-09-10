@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "connected-react-router": "^6.5.2",
+    "file-loader": "^4.2.0",
     "history": "^4.9.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",

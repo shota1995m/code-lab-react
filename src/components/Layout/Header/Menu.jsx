@@ -3,7 +3,6 @@ import {render} from 'react-dom'
 import { Link } from 'react-router-dom'
 
 import menuJson from 'data/menu.json'
-import 'scss/components/menu.scss'
 
 export default class Menu extends Component {
 
@@ -20,7 +19,10 @@ export default class Menu extends Component {
       <ul>
       {this.state.links.map((v,k) => {
         return <li key={k}>
-          <Link to={v['href']}>{v['name']}</Link>
+          <Link to={v['href']}>
+          {v['icon'] && <img src={require(`../../../images/${v['icon']}`)} />}
+            {v['name']}
+          </Link>
           </li>
       })}
       </ul>

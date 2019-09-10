@@ -10,6 +10,7 @@ export default {
 
   output: {
     path: dist,
+    publicPath: '/',
     filename: 'bundle.js'
   },
 
@@ -38,6 +39,17 @@ export default {
           }
         ],
       },
+			{
+				test: /\.(jpe?g|png|gif|svg)$/i,
+				include: src,
+				use: [{
+					loader: 'url-loader',
+					options: {
+						limit: 30000,
+						name: '[name].[ext]'
+					}
+				}]
+			}
     ]
   },
 

@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Link, Switch } from 'react-router-dom'
 
 import 'scss/style.scss'
 
-import Header from 'components/Layout/Header/Header'
+import { Header } from 'components/Layout/Header/containers'
 import Top from 'components/Top'
 import { Lab } from 'components/Lab/containers'
 import About from 'components/About'

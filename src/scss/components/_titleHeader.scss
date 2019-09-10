@@ -1,0 +1,34 @@
+.title-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 15px;
+  box-sizing: border-box;
+
+  &-inner {
+    padding: 54px 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+    &.about {
+      background: $pink-color;
+    }
+
+    &.lab {
+      background: $blue-color;
+    }
+
+
+    h2 {
+      width: 100%;
+    }
+
+    p {
+      white-space: pre-wrap;
+    }
+  }
+}

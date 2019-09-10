@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import {render} from 'react-dom'
-import 'scss/components/header.scss';
 
 import Menu from './Menu';
 

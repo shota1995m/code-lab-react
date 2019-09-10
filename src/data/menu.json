@@ -1,13 +1,16 @@
 [
   {
+    "icon": "icon_top.svg",
     "name": "Top",
     "href": "/"
   },
   {
+    "icon": "icon_lab.svg",
     "name": "Lab",
     "href": "/lab"
   },
   {
+    "icon": "icon_about.svg",
     "name": "About",
     "href": "/about"
   }
